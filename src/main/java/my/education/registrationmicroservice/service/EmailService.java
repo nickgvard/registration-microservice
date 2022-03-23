@@ -1,8 +1,8 @@
 package my.education.registrationmicroservice.service;
 
-import my.education.registrationmicroservice.dto.UserDto;
+import my.education.registrationmicroservice.dto.UserRegistrationDto;
 
 public interface EmailService {
 
-    void sendEmail(UserDto userDto);
+    void sendEmail(UserRegistrationDto userRegistrationDto);
 }

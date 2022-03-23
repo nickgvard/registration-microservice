@@ -7,23 +7,21 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 
 import java.util.Properties;
-
-@Configuration
 public class EmailConfig {
 
-    @Value("")
+
     private String host;
 
-    @Value("")
+//    @Value("")
     private int port;
 
-    @Value("")
+//    @Value("")
     private String username;
 
-    @Value("")
+//    @Value("")
     private String password;
 
-    @Bean
+//    @Bean
     public JavaMailSender javaMailSender() {
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
         mailSender.setHost(host);
